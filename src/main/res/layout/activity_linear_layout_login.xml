@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#F69F98">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login System"
+        android:textColor="#26A4B3"
+        android:textSize="24sp"
+        android:textStyle="bold"
+         />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Email"
+        app:endIconMode="clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Password"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"> <!-- Center the buttons horizontally -->
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="171dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:tag="20sp"
+            android:background="#FDD5C8"
+            android:text="Submit"
+            android:textStyle="bold"
+            android:shadowRadius="10"
+            android:layout_marginRight="15dp"/>
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:tag="20sp"
+            android:background="#FDD5C8"
+            android:text="Cancel"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register_account"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textColor="#065DA2"
+        android:textStyle="bold"
+        android:id="@+id/tvRegister"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget password???"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:id="@+id/tvForgetPassword"/>
+
+</LinearLayout>

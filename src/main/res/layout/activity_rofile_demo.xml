@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+    android:shrinkColumns="*"
+    android:padding="10dp">
+
+    <TableRow>
+        <TextView
+            android:text="My Profile"
+            android:textSize="30sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_span="2"
+            />
+    </TableRow>
+    <TableRow>
+        <ImageView
+            android:src="@drawable/btec"
+            android:layout_width="30sp"
+            android:layout_height="100dp"
+            />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingStart="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="le thi lan huong"
+                android:textSize="20sp"
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20 age"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="vinh phuc"
+                android:textSize="20sp"/>
+        </LinearLayout>
+    </TableRow>
+
+</TableLayout>

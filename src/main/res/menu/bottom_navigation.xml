@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.campusexpensese06205.MainActivity">
+    <item
+        android:id="@+id/home_menu"
+        android:title="Trang chủ"
+        android:icon="@drawable/home_icon"
+        />
+    <item
+        android:id="@+id/expenses_menu"
+        android:title="Màu sắc"
+        android:icon="@drawable/color"/>
+    <item
+        android:id="@+id/budget_menu"
+        android:title="Danh sách"
+        android:icon="@drawable/list"/>
+    <item
+        android:id="@+id/setting_menu"
+        android:title="Hỗ trợ"
+        android:icon="@drawable/setting_icon"/>
+</menu>

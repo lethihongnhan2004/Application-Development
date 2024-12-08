@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FAF2E8">
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expense Details"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <!-- Hình ảnh bên dưới tiêu đề -->
+        <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/tvTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/money" />
+
+        <!-- TextView hiển thị ID -->
+        <TextView
+            android:id="@+id/tvId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID: "
+            android:textSize="18sp"
+            android:layout_below="@id/imgIcon"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:background="#FFFFFF"
+            android:elevation="2dp" />
+
+        <!-- TextView hiển thị Name -->
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:textSize="18sp"
+            android:layout_below="@id/tvId"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="#FFFFFF"
+            android:elevation="2dp" />
+
+        <!-- TextView hiển thị Amount -->
+        <TextView
+            android:id="@+id/tvAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amount: "
+            android:textSize="18sp"
+            android:layout_below="@id/tvName"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="#FFFFFF"
+            android:elevation="2dp" />
+
+        <!-- TextView hiển thị Description -->
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description: "
+            android:textSize="18sp"
+            android:layout_below="@id/tvAmount"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="#FFFFFF"
+            android:elevation="2dp" />
+
+        <!-- LinearLayout chứa ba nút Edit, Delete và Cancel -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDescription"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+                <!-- Nút Edit -->
+                <Button
+                    android:id="@+id/btnEdit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Update"
+                    android:backgroundTint="#FFB48F"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginEnd="4dp" />
+
+
+                <!-- Nút Cancel -->
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cancel"
+                    android:backgroundTint="#90CAF9"
+                    android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+</RelativeLayout>

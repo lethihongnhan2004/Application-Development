@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment"> <!-- Giữ FirstFragment làm điểm bắt đầu -->
+
+    <!-- FirstFragment -->
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.campusexpensese06205.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <!-- Action to navigate from FirstFragment to SecondFragment -->
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+
+    <!-- SecondFragment -->
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.campusexpensese06205.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <!-- Action to navigate from SecondFragment back to FirstFragment -->
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+
+    <!-- BubgetFragment (New Fragment) -->
+    <fragment
+        android:id="@+id/bubgetFragment"
+        android:name="com.example.campusexpensese06205.BubgetFragment"
+        android:label="Chi tiêu"
+        tools:layout="@layout/fragment_bubget">
+
+        <!-- Action to navigate from BubgetFragment to DetailFragment -->
+        <action
+            android:id="@+id/action_bubgetFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <!-- DetailFragment (New Fragment) -->
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.campusexpensese06205.DetailFragment"
+        android:label="Chi tiết"
+        tools:layout="@layout/fragment_detail" />
+
+</navigation>
